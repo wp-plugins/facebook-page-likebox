@@ -42,7 +42,7 @@ Tags: Facebook, Facebook Like Box, Facebook Page Plugin, Facebook Widget, Social
 = How can I get Facebook Page Plugin Widget to my blog's Page or Post? =
 * Please add `<!--facebook-page-plugin—>` to any page/post under HTML section. 
 
-= How can I get Facebook Members to blog's sidebar? =
+= How can I get Facebook Page Plugin to blog's sidebar? =
 * Go to `Appearance -> Widgets -> Facebook Page Plugin` and add it into Sidebar.
 
 = Where do I get latest updates on plugin? =
