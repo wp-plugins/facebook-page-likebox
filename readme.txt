@@ -17,7 +17,7 @@ Subscribe to Twitter and Facebook to get **latest update**:
 
 [Twitter](http://twitter.com/SmashifyCo) |
 [Facebook](https://www.facebook.com/pages/Smashify/1653200054899592) |
-[Feedback](http://smashify.co/facebook-page-plugin) |
+[Feedback](http://smashify.co/facebook-page-plugin-likebox-for-wordpress/)
 
 **Features**
 
@@ -52,7 +52,7 @@ Tags: Facebook, Facebook Like Box, Facebook Page Plugin, Facebook Widget, Social
 * You need to provide your Facebook Page’s complete URL.
 
 = Got a Question? =
-* Please report your questions or bugs at Plugin <a href="http://smashify.co/facebook-page-plugin" target="_blank">Homepage</a>.
+* Please report your questions or bugs at Plugin <a href="http://smashify.co/facebook-page-plugin-likebox-for-wordpress/" target="_blank">Homepage</a>.
 
 == Screenshots ==
 1. Admin Panel: Facebook Likebox Widget
