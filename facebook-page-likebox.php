@@ -81,8 +81,6 @@ function smashify_facebook_page_plugin_likebox()
     return $output;
 }
 
-
-// Displays Wordpress Blog Facebook Members Options menu
 function smashify_facebook_page_plugin_add_option_page()
 {
     if (function_exists('add_options_page')) {
@@ -179,7 +177,7 @@ function smashify_facebook_page_plugin_likebox_widget_control()
 
 function widget_smashify_facebook_page_plugin_likebox_init()
 {
-    $widget_options = array('classname' => 'widget_smashify_facebook_page_plugin_likebox', 'description' => _("Display Facebook Members"));
+    $widget_options = array('classname' => 'widget_smashify_facebook_page_plugin_likebox', 'description' => _("Display Facebook Like Plugin"));
     wp_register_sidebar_widget('smashify_facebook_page_plugin_likebox_widgets', _('Facebook Page Plugin'), 'show_smashify_facebook_page_plugin_likebox_widget', $widget_options);
     wp_register_widget_control('smashify_facebook_page_plugin_likebox_widgets', _('Facebook Page Plugin'), 'smashify_facebook_page_plugin_likebox_widget_control');
 }
