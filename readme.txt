@@ -15,9 +15,9 @@ See how many users already like your Facebook page, and which of their friends l
 
 Subscribe to Twitter and Facebook to get **latest update**:
 
-[Twitter](http://twitter.com/SmashifyCo) |
-[Facebook](https://www.facebook.com/pages/Smashify/1653200054899592) |
-[Feedback](http://smashify.co/facebook-page-plugin-likebox-for-wordpress/)
+[Twitter](http://twitter.com/Crunchlr) |
+[Facebook](https://www.facebook.com/pages/Crunchlr/1653200054899592) |
+[Feedback](http://crunchlr.com/facebook-page-plugin-likebox-for-wordpress/)
 
 **Features**
 
@@ -46,13 +46,13 @@ Tags: Facebook, Facebook Like Box, Facebook Page Plugin, Facebook Widget, Social
 * Go to `Appearance -> Widgets -> Facebook Page Plugin` and add it into Sidebar.
 
 = Where do I get latest updates on plugin? =
-* On <a href="http://twitter.com/SmashifyCo” target="_blank">Twitter</a> and <a href="https://www.facebook.com/pages/Smashify/1653200054899592" target="_blank">Facebook</a>.
+* On <a href="http://twitter.com/Crunchlr” target="_blank">Twitter</a> and <a href="https://www.facebook.com/pages/Crunchlr/1653200054899592" target="_blank">Facebook</a>.
 
 = What should I put in page name section? =
 * You need to provide your Facebook Page’s complete URL.
 
 = Got a Question? =
-* Please report your questions or bugs at Plugin <a href="http://smashify.co/facebook-page-plugin-likebox-for-wordpress/" target="_blank">Homepage</a>.
+* Please report your questions or bugs at Plugin <a href="http://crunchlr.com/facebook-page-plugin-likebox-for-wordpress/" target="_blank">Homepage</a>.
 
 == Screenshots ==
 1. Admin Panel: Facebook Likebox Widget

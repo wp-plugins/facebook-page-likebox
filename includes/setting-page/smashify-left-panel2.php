@@ -1,6 +1,6 @@
 <?php
 /**
- * @author Smashify.co
+ * @author Crunchlr.com
  * Plugin: Facebook Page Plugin
  */
 ?>
@@ -17,8 +17,8 @@
 			<table class="form-table">
 				<tr valign="top" class="alternate">
 					<th scope="row" style="width: 29%;"><label>Facebook Page Name</label></th>
-					<td><textarea id="styled" name="smashify_facebook_page_plugin_data_href"
-							cols="38" rows="1"><?php echo get_option('smashify_facebook_page_plugin_data_href'); ?></textarea>
+					<td><textarea id="styled" name="crunchlr_facebook_page_plugin_data_href"
+							cols="38" rows="1"><?php echo get_option('crunchlr_facebook_page_plugin_data_href'); ?></textarea>
                     &nbsp;<?=$fb_pagename1?>
                     <br> <a
 						href="http://www.facebook.com/pages/create.php" target="_blank">Create
@@ -26,35 +26,35 @@
 				</tr>
 				<tr valign="top">
 					<th scope="row"><label>Hide Cover?</label></th>
-					<td><input name="smashify_facebook_page_plugin_data_hide_cover" type="radio"
+					<td><input name="crunchlr_facebook_page_plugin_data_hide_cover" type="radio"
 						value="true"
-						<?php checked('true', $smashify_facebook_page_plugin_data_hide_cover); ?> />
-						&nbsp;YES <input name="smashify_facebook_page_plugin_data_hide_cover" type="radio"
+						<?php checked('true', $crunchlr_facebook_page_plugin_data_hide_cover); ?> />
+						&nbsp;YES <input name="crunchlr_facebook_page_plugin_data_hide_cover" type="radio"
 						value="false"
-						<?php checked('false', $smashify_facebook_page_plugin_data_hide_cover); ?> />
+						<?php checked('false', $crunchlr_facebook_page_plugin_data_hide_cover); ?> />
                     &nbsp;NO (default)
                     &nbsp;<?=$fb_showstream1?>
                 </td>
 				</tr>
 				<tr valign="top" class="alternate">
 					<th scope="row"><label>Show Facespile?</label></th>
-					<td><input name="smashify_facebook_page_plugin_data_show_facepile" type="radio"
+					<td><input name="crunchlr_facebook_page_plugin_data_show_facepile" type="radio"
 						value="true"
-						<?php checked('true', $smashify_facebook_page_plugin_data_show_facepile); ?> />
-						&nbsp;YES (default) <input name="smashify_facebook_page_plugin_data_show_facepile"
+						<?php checked('true', $crunchlr_facebook_page_plugin_data_show_facepile); ?> />
+						&nbsp;YES (default) <input name="crunchlr_facebook_page_plugin_data_show_facepile"
 						type="radio" value="false"
-						<?php checked('false', $smashify_facebook_page_plugin_data_show_facepile); ?> />
+						<?php checked('false', $crunchlr_facebook_page_plugin_data_show_facepile); ?> />
 						&nbsp;NO</td>
 				</tr>
 				<tr valign="top">
 					<th scope="row"><label>Show Posts?</label></th>
 
-					<td><input name="smashify_facebook_page_plugin_data_show_posts" type="radio"
+					<td><input name="crunchlr_facebook_page_plugin_data_show_posts" type="radio"
 						value="true"
-						<?php checked('true', $smashify_facebook_page_plugin_data_show_posts); ?> />
-						&nbsp;YES <input name="smashify_facebook_page_plugin_data_show_posts"
+						<?php checked('true', $crunchlr_facebook_page_plugin_data_show_posts); ?> />
+						&nbsp;YES <input name="crunchlr_facebook_page_plugin_data_show_posts"
 						type="radio" value="false"
-						<?php checked('false', $smashify_facebook_page_plugin_data_show_posts); ?> />
+						<?php checked('false', $crunchlr_facebook_page_plugin_data_show_posts); ?> />
 						&nbsp;NO (default)</td>
 				</tr>
 				
