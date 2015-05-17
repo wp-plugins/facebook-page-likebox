@@ -65,6 +65,10 @@ Tags: Facebook, Facebook Like Box, Facebook Page Plugin, Facebook Widget, Social
 
 == Changelog == 
 
+= 1.1 =
+* Plugin homepage change
+* Bug fixes
+
 = 1.0 =
 * Initial Release
 * Fully featured Facebook Page Plugin
