@@ -1,6 +1,6 @@
 <?php
 /**
- * @author Smashify.co
+ * @author Crunchlr.com
  * Plugin: Facebook Page Plugin
  */
 ?>
@@ -12,7 +12,7 @@
 
             <?php wp_nonce_field('fmz-update-setting','fmz-update-setting'); ?>
 
-            <u><h2>Facebook Page Plugin by Smashify</h2></u>
+            <u><h2>Facebook Page Plugin by Crunchlr.com</h2></u>
 
             <div id="poststuff" class="metabox-holder has-right-sidebar">
 
@@ -22,8 +22,8 @@
                     <br>
 
                     <?php
-                    require_once 'setting-page/smashify-left-column.php';
-                    require_once 'setting-page/smashify-right-column.php';
-                    require_once 'setting-page/smashify-footer.php';
+                    require_once 'setting-page/crunchlr-left-column.php';
+                    require_once 'setting-page/crunchlr-right-column.php';
+                    require_once 'setting-page/crunchlr-footer.php';
 
                     ?>
