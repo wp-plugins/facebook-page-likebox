@@ -1,15 +1,15 @@
 <?php
 /*
 Plugin Name: Facebook Page Plugin (Likebox)
-Plugin URI: http://crunchlr.com/facebook-page-plugin-likebox-for-wordpress/
+Plugin URI: http://smashify.co/facebook-page-plugin-likebox-for-wordpress/
 Description: THE Simplest way to bring Facebook Page Plugin to WordPress with lot more Options
-Version: 1.1
-Author: Crunchlr
-Author URI: http://crunchlr.com
+Version: 1.2
+Author: Smashify
+Author URI: http://smashify.co
 */
 
 /*
-    Copyright (C) 2015 Crunchlr.com
+    Copyright (C) 2015 Smashify.co
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -155,7 +155,7 @@ function show_crunchlr_facebook_page_plugin_likebox_widget($args)
     if ($sponser == 1) {
         $sponserlink_profile = "";
     } else {
-        $sponserlink_profile = '<div align="left">- <a href="http://crunchlr.com/facebook-page-plugin-likebox-for-wordpress/" title="Facebook Page Plugin by Crunchlr.com" target="_blank"> <font size="1">' . 'Facebook Page Plugin by Crunchlr' . '</font></a></div>';
+        $sponserlink_profile = '<div align="left">- <a href="http://smashify.co/facebook-page-plugin-likebox-for-wordpress/" title="Facebook Page Plugin by Smashify.co" target="_blank"> <font size="1">' . 'Facebook Page Plugin by Smashify' . '</font></a></div>';
     }
 
 

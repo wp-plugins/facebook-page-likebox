@@ -1,11 +1,11 @@
 <?php
 /**
- * @author Crunchlr.com
+ * @author Smashify.co
  * Plugin: Facebook Page Plugin
  */
 ?>
 <div class="postbox">
-	<div class="crunchlr">
+	<div class="smashify">
 		<h3>Option panel for Widget/Sidebar Area</h3>
 
 		<div>
