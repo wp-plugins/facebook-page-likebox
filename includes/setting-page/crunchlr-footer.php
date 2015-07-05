@@ -1,6 +1,6 @@
 <?php
 /**
- * @author Crunchlr.com
+ * @author Smashify.co
  * Plugin: Facebook Page Plugin
  */
 ?>
@@ -10,6 +10,6 @@
 </div>
 <div class="clear">
     <p>
-        <br/>&copy; Copyright <?php echo date("Y"); ?> <a href="http://crunchlr.com" target="_blank">Crunchlr.com</a>
+        <br/>&copy; Copyright <?php echo date("Y"); ?> <a href="http://smashify.co" target="_blank">Crunchlr.com</a>
     </p>
 </div>		
