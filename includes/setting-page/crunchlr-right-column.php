@@ -1,6 +1,6 @@
 <?php
 /**
- * @author Crunchlr.com
+ * @author Smashify.co
  * Plugin: Facebook Page Plugin
  */
 ?>

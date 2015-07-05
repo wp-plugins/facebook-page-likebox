@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Facebook Page Plugin (Likebox)
-Plugin URI: http://crunchlr.com/facebook-page-plugin-likebox-for-wordpress/
+Plugin URI: http://smashify.co/facebook-page-plugin-likebox-for-wordpress/
 Description: THE Simplest way to bring Facebook Page Plugin to WordPress with lot more Options
 Version: 1.3
 Author: Crunchlr
-Author URI: http://crunchlr.com
+Author URI: http://smashify.co
 */
 
 /*
@@ -28,26 +28,26 @@ Author URI: http://crunchlr.com
 
 
 // Some default options
-add_option('crunchlr_facebook_page_plugin_data_href', 'https://www.facebook.com/WordPress'); 
-add_option('crunchlr_facebook_page_plugin_broder_color', '');
-add_option('crunchlr_facebook_page_plugin_data_hide_cover', 'false');
-add_option('crunchlr_facebook_page_plugin_data_show_facepile', 'true');
-add_option('crunchlr_facebook_page_plugin_data_show_posts', 'false');
+add_option('smashify_facebook_page_plugin_data_href', 'https://www.facebook.com/WordPress'); 
+add_option('smashify_facebook_page_plugin_broder_color', '');
+add_option('smashify_facebook_page_plugin_data_hide_cover', 'false');
+add_option('smashify_facebook_page_plugin_data_show_facepile', 'true');
+add_option('smashify_facebook_page_plugin_data_show_posts', 'false');
 
-add_option('crunchlr_facebook_page_plugin_widget_data_href', 'https://www.facebook.com/WordPress');
-add_option('crunchlr_facebook_page_plugin_widget_title', 'Like Box');
-add_option('crunchlr_facebook_page_plugin_widget_border_color', '');
-add_option('crunchlr_facebook_page_plugin_widget_data_hide_cover', 'false');
-add_option('crunchlr_facebook_page_plugin_widget_data_show_facepile', 'true');
-add_option('crunchlr_facebook_page_plugin_widget_data_show_posts', 'false');
+add_option('smashify_facebook_page_plugin_widget_data_href', 'https://www.facebook.com/WordPress');
+add_option('smashify_facebook_page_plugin_widget_title', 'Like Box');
+add_option('smashify_facebook_page_plugin_widget_border_color', '');
+add_option('smashify_facebook_page_plugin_widget_data_hide_cover', 'false');
+add_option('smashify_facebook_page_plugin_widget_data_show_facepile', 'true');
+add_option('smashify_facebook_page_plugin_widget_data_show_posts', 'false');
 
-add_option('crunchlr_fbmembers_show_sponser_link', '1');
+add_option('smashify_fbmembers_show_sponser_link', '1');
 
-function filter_crunchlr_facebook_page_plugin_likebox($content)
+function filter_smashify_facebook_page_plugin_likebox($content)
 {
     if (strpos($content, "<!--facebook-page-plugin-->") !== FALSE) {
         $content = preg_replace('/<p>\s*<!--(.*)-->\s*<\/p>/i', "<!--$1-->", $content);
-        $content = str_replace('<!--facebook-page-plugin-->', crunchlr_facebook_page_plugin_likebox(), $content);
+        $content = str_replace('<!--facebook-page-plugin-->', smashify_facebook_page_plugin_likebox(), $content);
     }
 
     return $content;
@@ -65,13 +65,13 @@ function facebook_page_plugin_head()
         echo '}(document, \'script\', \'facebook-jssdk\'));</script>' . "\n";
 }
 
-function crunchlr_facebook_page_plugin_likebox()
+function smashify_facebook_page_plugin_likebox()
 {
-    $fm_data_href = get_option('crunchlr_facebook_page_plugin_data_href');
-    $fm_brodercolor = get_option('crunchlr_facebook_page_plugin_broder_color');
-    $fm_data_hidecover = get_option('crunchlr_facebook_page_plugin_data_hide_cover');
-    $fm_data_facepile = get_option('crunchlr_facebook_page_plugin_data_show_facepile');
-    $fm_data_showposts = get_option('crunchlr_facebook_page_plugin_data_show_posts');
+    $fm_data_href = get_option('smashify_facebook_page_plugin_data_href');
+    $fm_brodercolor = get_option('smashify_facebook_page_plugin_broder_color');
+    $fm_data_hidecover = get_option('smashify_facebook_page_plugin_data_hide_cover');
+    $fm_data_facepile = get_option('smashify_facebook_page_plugin_data_show_facepile');
+    $fm_data_showposts = get_option('smashify_facebook_page_plugin_data_show_posts');
 
 
     $T1 = '<div class="fb-page" data-href="'.$fm_data_href . '" data-hide-cover="'.$fm_data_hidecover.'" data-show-facepile="'.$fm_data_facepile.'" data-show-posts="'.$fm_data_showposts.'"><div class="fb-xfbml-parse-ignore"></div></div>';
@@ -81,39 +81,39 @@ function crunchlr_facebook_page_plugin_likebox()
     return $output;
 }
 
-function crunchlr_facebook_page_plugin_add_option_page()
+function smashify_facebook_page_plugin_add_option_page()
 {
     if (function_exists('add_options_page')) {
-        add_options_page('Facebook Page Plugin', 'Facebook Page Plugin', 8, __FILE__, 'crunchlr_facebook_page_plugin_options_page');
+        add_options_page('Facebook Page Plugin', 'Facebook Page Plugin', 8, __FILE__, 'smashify_facebook_page_plugin_options_page');
     }
 }
 
-function crunchlr_facebook_page_plugin_options_page()
+function smashify_facebook_page_plugin_options_page()
 {
-    $crunchlr_facebook_page_plugin_data_hide_cover = $_POST['crunchlr_facebook_page_plugin_data_hide_cover'];
-    $crunchlr_facebook_page_plugin_data_show_facepile = $_POST['crunchlr_facebook_page_plugin_data_show_facepile'];
-    $crunchlr_facebook_page_plugin_data_show_posts = $_POST['crunchlr_facebook_page_plugin_data_show_posts'];
-    $crunchlr_facebook_page_plugin_widget_data_hide_cover = $_POST['crunchlr_facebook_page_plugin_widget_data_hide_cover'];
-    $crunchlr_facebook_page_plugin_widget_data_show_facepile = $_POST['crunchlr_facebook_page_plugin_widget_data_show_facepile'];
-    $crunchlr_facebook_page_plugin_widget_data_show_posts = $_POST['crunchlr_facebook_page_plugin_widget_data_show_posts'];
+    $smashify_facebook_page_plugin_data_hide_cover = $_POST['smashify_facebook_page_plugin_data_hide_cover'];
+    $smashify_facebook_page_plugin_data_show_facepile = $_POST['smashify_facebook_page_plugin_data_show_facepile'];
+    $smashify_facebook_page_plugin_data_show_posts = $_POST['smashify_facebook_page_plugin_data_show_posts'];
+    $smashify_facebook_page_plugin_widget_data_hide_cover = $_POST['smashify_facebook_page_plugin_widget_data_hide_cover'];
+    $smashify_facebook_page_plugin_widget_data_show_facepile = $_POST['smashify_facebook_page_plugin_widget_data_show_facepile'];
+    $smashify_facebook_page_plugin_widget_data_show_posts = $_POST['smashify_facebook_page_plugin_widget_data_show_posts'];
   
     if (isset($_POST['info_update'])) {
     	
     	if (!isset($_POST['my_fmz_update_setting'])) die("<br><br>Hmm .. looks like you didn't send any credentials.. No CSRF for you! ");
     	if (!wp_verify_nonce($_POST['my_fmz_update_setting'],'fmz-update-setting')) die("<br><br>Hmm .. looks like you didn't send any credentials.. No CSRF for you!");
 
-        update_option('crunchlr_facebook_page_plugin_data_href', (string)$_POST["crunchlr_facebook_page_plugin_data_href"]);
-        update_option('crunchlr_facebook_page_plugin_data_hide_cover', (string)$_POST["crunchlr_facebook_page_plugin_data_hide_cover"]);
-        update_option('crunchlr_facebook_page_plugin_data_show_facepile', (string)$_POST['crunchlr_facebook_page_plugin_data_show_facepile']);
-        update_option('crunchlr_facebook_page_plugin_data_show_posts', (string)$_POST['crunchlr_facebook_page_plugin_data_show_posts']);
+        update_option('smashify_facebook_page_plugin_data_href', (string)$_POST["smashify_facebook_page_plugin_data_href"]);
+        update_option('smashify_facebook_page_plugin_data_hide_cover', (string)$_POST["smashify_facebook_page_plugin_data_hide_cover"]);
+        update_option('smashify_facebook_page_plugin_data_show_facepile', (string)$_POST['smashify_facebook_page_plugin_data_show_facepile']);
+        update_option('smashify_facebook_page_plugin_data_show_posts', (string)$_POST['smashify_facebook_page_plugin_data_show_posts']);
 
-        update_option('crunchlr_fbmembers_show_sponser_link', ($_POST['crunchlr_fbmembers_show_sponser_link'] == '1') ? '1' : '-1');
+        update_option('smashify_fbmembers_show_sponser_link', ($_POST['smashify_fbmembers_show_sponser_link'] == '1') ? '1' : '-1');
 
-        update_option('crunchlr_facebook_page_plugin_widget_data_href', (string)$_POST['crunchlr_facebook_page_plugin_widget_data_href']);
-        update_option('crunchlr_facebook_page_plugin_widget_title', (string)$_POST['crunchlr_facebook_page_plugin_widget_title']);
-        update_option('crunchlr_facebook_page_plugin_widget_data_hide_cover', (string)$_POST['crunchlr_facebook_page_plugin_widget_data_hide_cover']);
-        update_option('crunchlr_facebook_page_plugin_widget_data_show_facepile', (string)$_POST['crunchlr_facebook_page_plugin_widget_data_show_facepile']);
-        update_option('crunchlr_facebook_page_plugin_widget_data_show_posts', (string)$_POST['crunchlr_facebook_page_plugin_widget_data_show_posts']);
+        update_option('smashify_facebook_page_plugin_widget_data_href', (string)$_POST['smashify_facebook_page_plugin_widget_data_href']);
+        update_option('smashify_facebook_page_plugin_widget_title', (string)$_POST['smashify_facebook_page_plugin_widget_title']);
+        update_option('smashify_facebook_page_plugin_widget_data_hide_cover', (string)$_POST['smashify_facebook_page_plugin_widget_data_hide_cover']);
+        update_option('smashify_facebook_page_plugin_widget_data_show_facepile', (string)$_POST['smashify_facebook_page_plugin_widget_data_show_facepile']);
+        update_option('smashify_facebook_page_plugin_widget_data_show_posts', (string)$_POST['smashify_facebook_page_plugin_widget_data_show_posts']);
 
         echo '<div id="message" class="updated fade"><p><strong>Settings saved.</strong></p></div>';
         echo '</strong>';
@@ -125,37 +125,37 @@ function crunchlr_facebook_page_plugin_options_page()
         $as_facebook_mem_widget_stream = get_option('as_facebook_mem_widget_stream');
         $as_facebook_mem_widget_faces = get_option('as_facebook_mem_widget_faces');
 
-        $crunchlr_facebook_page_plugin_data_hide_cover = get_option('crunchlr_facebook_page_plugin_data_hide_cover');
-        $crunchlr_facebook_page_plugin_data_show_facepile = get_option('crunchlr_facebook_page_plugin_data_show_facepile');
-        $crunchlr_facebook_page_plugin_data_show_posts = get_option('crunchlr_facebook_page_plugin_data_show_posts');
-        $crunchlr_facebook_page_plugin_widget_data_hide_cover = get_option('crunchlr_facebook_page_plugin_widget_data_hide_cover');
-        $crunchlr_facebook_page_plugin_widget_data_show_facepile = get_option('crunchlr_facebook_page_plugin_widget_data_show_facepile');
-        $crunchlr_facebook_page_plugin_widget_data_show_posts = get_option('crunchlr_facebook_page_plugin_widget_data_show_posts');
+        $smashify_facebook_page_plugin_data_hide_cover = get_option('smashify_facebook_page_plugin_data_hide_cover');
+        $smashify_facebook_page_plugin_data_show_facepile = get_option('smashify_facebook_page_plugin_data_show_facepile');
+        $smashify_facebook_page_plugin_data_show_posts = get_option('smashify_facebook_page_plugin_data_show_posts');
+        $smashify_facebook_page_plugin_widget_data_hide_cover = get_option('smashify_facebook_page_plugin_widget_data_hide_cover');
+        $smashify_facebook_page_plugin_widget_data_show_facepile = get_option('smashify_facebook_page_plugin_widget_data_show_facepile');
+        $smashify_facebook_page_plugin_widget_data_show_posts = get_option('smashify_facebook_page_plugin_widget_data_show_posts');
    }
   
     require_once (dirname(__FILE__) . '/includes/settings-page.php');
 
 }
 
-function show_crunchlr_facebook_page_plugin_likebox_widget($args)
+function show_smashify_facebook_page_plugin_likebox_widget($args)
 {
     extract($args);
 
-    $fm_widget_data_href = get_option('crunchlr_facebook_page_plugin_widget_data_href');
-    $fm_widget_title = get_option('crunchlr_facebook_page_plugin_widget_title');
-    $fm_widget_border_color = get_option('crunchlr_facebook_page_plugin_widget_border_color');
-    $fm_widget_hide_cover = get_option('crunchlr_facebook_page_plugin_widget_data_hide_cover');
-    $fm_widget_show_facepile = get_option('crunchlr_facebook_page_plugin_widget_data_show_facepile');
-    $fm_widget_show_posts = get_option('crunchlr_facebook_page_plugin_widget_data_show_posts');
+    $fm_widget_data_href = get_option('smashify_facebook_page_plugin_widget_data_href');
+    $fm_widget_title = get_option('smashify_facebook_page_plugin_widget_title');
+    $fm_widget_border_color = get_option('smashify_facebook_page_plugin_widget_border_color');
+    $fm_widget_hide_cover = get_option('smashify_facebook_page_plugin_widget_data_hide_cover');
+    $fm_widget_show_facepile = get_option('smashify_facebook_page_plugin_widget_data_show_facepile');
+    $fm_widget_show_posts = get_option('smashify_facebook_page_plugin_widget_data_show_posts');
  
     $T1 = '<div class="fb-page" data-href="'.$fm_widget_data_href . '" data-hide-cover="'.$fm_widget_hide_cover.'" data-show-facepile="'.$fm_widget_show_facepile.'" data-show-posts="'.$fm_widget_show_posts.'"><div class="fb-xfbml-parse-ignore"></div></div>';
  
-    $sponser = get_option('crunchlr_fbmembers_show_sponser_link');
+    $sponser = get_option('smashify_fbmembers_show_sponser_link');
 
     if ($sponser == 1) {
         $sponserlink_profile = "";
     } else {
-        $sponserlink_profile = '<div align="left">- <a href="http://crunchlr.com/facebook-page-plugin-likebox-for-wordpress/" title="Facebook Page Plugin by Crunchlr.com" target="_blank"> <font size="1">' . 'Facebook Page Plugin by Crunchlr' . '</font></a></div>';
+        $sponserlink_profile = '<div align="left">- <a href="http://smashify.co/facebook-page-plugin-likebox-for-wordpress/" title="Facebook Page Plugin by Crunchlr.com" target="_blank"> <font size="1">' . 'Facebook Page Plugin by Crunchlr' . '</font></a></div>';
     }
 
 
@@ -166,7 +166,7 @@ function show_crunchlr_facebook_page_plugin_likebox_widget($args)
 }
 
 
-function crunchlr_facebook_page_plugin_likebox_widget_control()
+function smashify_facebook_page_plugin_likebox_widget_control()
 {
     ?>
 <p>
@@ -175,11 +175,11 @@ function crunchlr_facebook_page_plugin_likebox_widget_control()
 <?php
 }
 
-function widget_crunchlr_facebook_page_plugin_likebox_init()
+function widget_smashify_facebook_page_plugin_likebox_init()
 {
-    $widget_options = array('classname' => 'widget_crunchlr_facebook_page_plugin_likebox', 'description' => _("Display Facebook Like Plugin"));
-    wp_register_sidebar_widget('crunchlr_facebook_page_plugin_likebox_widgets', _('Facebook Page Plugin'), 'show_crunchlr_facebook_page_plugin_likebox_widget', $widget_options);
-    wp_register_widget_control('crunchlr_facebook_page_plugin_likebox_widgets', _('Facebook Page Plugin'), 'crunchlr_facebook_page_plugin_likebox_widget_control');
+    $widget_options = array('classname' => 'widget_smashify_facebook_page_plugin_likebox', 'description' => _("Display Facebook Like Plugin"));
+    wp_register_sidebar_widget('smashify_facebook_page_plugin_likebox_widgets', _('Facebook Page Plugin'), 'show_smashify_facebook_page_plugin_likebox_widget', $widget_options);
+    wp_register_widget_control('smashify_facebook_page_plugin_likebox_widgets', _('Facebook Page Plugin'), 'smashify_facebook_page_plugin_likebox_widget_control');
 }
 
 function facebook_plugin_admin_init()
@@ -206,8 +206,8 @@ function facebook_plugin_admin_init()
 
 add_action('admin_menu', 'facebook_plugin_admin_init');
 
-add_filter('the_content', 'filter_crunchlr_facebook_page_plugin_likebox');
-add_action('init', 'widget_crunchlr_facebook_page_plugin_likebox_init');
-add_action('admin_menu', 'crunchlr_facebook_page_plugin_add_option_page');
+add_filter('the_content', 'filter_smashify_facebook_page_plugin_likebox');
+add_action('init', 'widget_smashify_facebook_page_plugin_likebox_init');
+add_action('admin_menu', 'smashify_facebook_page_plugin_add_option_page');
 add_action('wp_head', 'facebook_page_plugin_head');
 ?>
