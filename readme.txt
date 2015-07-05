@@ -1,5 +1,5 @@
 === Facebook Page Plugin (Likebox) ===
-Contributors: Crunchlr
+Contributors: SmashifyCo
 Tags: Facebook, Facebook Like Box, Facebook Page Plugin, Facebook Widget, Social Media, Like box, Facebook, Plugin, Facebook Plugin, Smashify, Smashify.co
 Requires at least: 4.0
 Tested up to: 4.2.2
