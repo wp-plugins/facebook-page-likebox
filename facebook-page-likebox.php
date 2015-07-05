@@ -4,7 +4,7 @@ Plugin Name: Facebook Page Plugin (Likebox)
 Plugin URI: http://smashify.co/facebook-page-plugin-likebox-for-wordpress/
 Description: THE Simplest way to bring Facebook Page Plugin to WordPress with lot more Options
 Version: 1.4
-Author: SmashifyCo
+Author: Smashify
 Author URI: http://smashify.co
 */
 
