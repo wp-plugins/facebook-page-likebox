@@ -1,6 +1,6 @@
 === Facebook Page Plugin (Likebox) ===
 Contributors: Smashify
-Tags: Facebook, Facebook Like Box, Facebook Page Plugin, Facebook Widget, Social Media, Like box, Facebook, Plugin, Facebook Plugin, Smashify, Smashify.co
+Tags: Facebook, Facebook Like Box, Facebook Page Plugin, Facebook Widget, Social Media, Like box, Facebook, Plugin, Facebook Plugin, Smashr, Smashr.org
 Requires at least: 4.0
 Tested up to: 4.2.2
 Stable tag: 1.4
@@ -15,9 +15,9 @@ See how many users already like your Facebook page, and which of their friends l
 
 Subscribe to Twitter and Facebook to get **latest update**:
 
-[Twitter](http://twitter.com/SmashifyCo) |
-[Facebook](https://www.facebook.com/pages/Smashify/138191683178586) |
-[Feedback](http://smashify.co/facebook-page-plugin-likebox-for-wordpress/)
+[Twitter](http://twitter.com/SmashrOrg) |
+[Facebook](https://www.facebook.com/pages/Smashrorg/399799783540503) |
+[Feedback](http://smashr.org/facebook-page-plugin-likebox-for-wordpress/)
 
 **Features**
 
@@ -27,7 +27,7 @@ Subscribe to Twitter and Facebook to get **latest update**:
 * Show Like Box in `Sidebar/Widget Area`.
 * Option to specify Width, Height.
 
-Tags: Facebook, Facebook Like Box, Facebook Page Plugin, Facebook Widget, Social Media, Like box, Facebook, Plugin, Facebook Plugin, Smashify, Smashify.co
+Tags: Facebook, Facebook Like Box, Facebook Page Plugin, Facebook Widget, Social Media, Like box, Facebook, Plugin, Facebook Plugin, Smashify, Smashr.org
 
 == Installation ==
 1. Unpack the `download-package`.
@@ -46,13 +46,13 @@ Tags: Facebook, Facebook Like Box, Facebook Page Plugin, Facebook Widget, Social
 * Go to `Appearance -> Widgets -> Facebook Page Plugin` and add it into Sidebar.
 
 = Where do I get latest updates on plugin? =
-* On <a href="http://twitter.com/SmashifyCo” target="_blank">Twitter</a> and <a href="https://www.facebook.com/pages/Smashify/138191683178586" target="_blank">Facebook</a>.
+* On <a href="http://twitter.com/SmashrOrg” target="_blank">Twitter</a> and <a href="https://www.facebook.com/pages/Smashrorg/399799783540503" target="_blank">Facebook</a>.
 
 = What should I put in page name section? =
 * You need to provide your Facebook Page’s complete URL.
 
 = Got a Question? =
-* Please report your questions or bugs at Plugin <a href="http://smashify.co/facebook-page-plugin-likebox-for-wordpress/" target="_blank">Homepage</a>.
+* Please report your questions or bugs at Plugin <a href="http://smashr.org/facebook-page-plugin-likebox-for-wordpress/" target="_blank">Homepage</a>.
 
 == Screenshots ==
 1. Admin Panel: Widget/Sidebar Likebox Option
