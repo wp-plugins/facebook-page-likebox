@@ -1,15 +1,1 @@
-<?php
-/**
- * @author Smashr.org
- * Plugin: Facebook Page Plugin
- */
-?>
-
-
-</div>
-</div>
-<div class="clear">
-    <p>
-        <br/>&copy; Copyright <?php echo date("Y"); ?> <a href="http://smashr.org" target="_blank">Crunchlr.com</a>
-    </p>
-</div>		
+Unexpected error.  File contents could not be restored from local history during undo/redo.
