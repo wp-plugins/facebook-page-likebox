@@ -12,9 +12,9 @@
 
         <div class="inside">
             <ul>
-               <li><a href="http://smashr.org/facebook-page-plugin-likebox-for-wordpress/" target="_blank">Feedback</a></li>
-               <li><a href="http://twitter.com/SmashrOrg" target="_blank">Twitter</a></li>
-               <li><a href="https://www.facebook.com/pages/Smashrorg/399799783540503" target="_blank">Facebook</a></li>
+               <li><a href="https://sparklr.io/facebook-page-plugin-likebox-for-wordpress/" target="_blank">Feedback</a></li>
+               <li><a href="http://twitter.com/SparklrIO" target="_blank">Twitter</a></li>
+               <li><a href="https://www.facebook.com/pages/Sparklrio/933259313387014" target="_blank">Facebook</a></li>
                </li>
             </ul>
         </div>
