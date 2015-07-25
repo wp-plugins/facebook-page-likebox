@@ -1,6 +1,6 @@
 === Facebook Page Plugin (Likebox) ===
 Contributors: Smashify
-Tags: Facebook, Facebook Like Box, Facebook Page Plugin, Facebook Widget, Social Media, Like box, Facebook, Plugin, Facebook Plugin, Smashr, Smashr.org
+Tags: Facebook, Facebook Like Box, Facebook Page Plugin, Facebook Widget, Social Media, Like box, Facebook, Plugin, Facebook Plugin, Smashify, Smashify.co
 Requires at least: 4.0
 Tested up to: 4.2.2
 Stable tag: 1.4
@@ -27,7 +27,7 @@ Subscribe to Twitter and Facebook to get **latest update**:
 * Show Like Box in `Sidebar/Widget Area`.
 * Option to specify Width, Height.
 
-Tags: Facebook, Facebook Like Box, Facebook Page Plugin, Facebook Widget, Social Media, Like box, Facebook, Plugin, Facebook Plugin, Smashify, Smashr.org
+Tags: Facebook, Facebook Like Box, Facebook Page Plugin, Facebook Widget, Social Media, Like box, Facebook, Plugin, Facebook Plugin, Smashify, Smashify.co
 
 == Installation ==
 1. Unpack the `download-package`.
