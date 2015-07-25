@@ -10,6 +10,6 @@
 </div>
 <div class="clear">
     <p>
-        <br/>&copy; Copyright <?php echo date("Y"); ?> <a href="http://smashr.org" target="_blank">Smashr.org</a>
+       <br/>&copy; Copyright <?php echo date("Y"); ?> <a href="http://smashify.co" target="_blank">Smashify.co</a>
     </p>
 </div>		
